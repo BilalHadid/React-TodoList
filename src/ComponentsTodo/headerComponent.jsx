@@ -1,0 +1,14 @@
+import React from 'react'
+import { Component } from 'react'
+import '../App'
+
+class myHead extends Component{
+    render(){
+        return(
+            <div className="Navi_Head">
+                <h1>It's My First Todo App</h1>
+            </div>
+        )
+    }
+}
+export default myHead

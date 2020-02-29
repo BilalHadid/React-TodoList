@@ -1,4 +1,4 @@
-.App {
+/* .App {
   text-align: center;
 }
 
@@ -35,4 +35,42 @@
   to {
     transform: rotate(360deg);
   }
+} */
+.Navi_Head
+{
+    color: blanchedalmond;
+    /* display: inline; */
+    text-align: center;
+    background-color: crimson;
+}
+/* .todolistMain .header input{
+  /* padding:10px;
+  font-size: 16px; */
+  /* border:2px solid ; */
+  /* width:165px; */
+
+
+/* } */ 
+.todolistMain .header button{
+  padding: 10px;
+  font-size: 16px;
+  margin: 10px;
+  margin-right: 0px;
+
+}
+.todolistMain .theList li{
+  color: #333;
+  background-color: rgba(255, 255,255, .5);
+  padding: 15px;
+  margin-bottom: 15px;
+  border-radius: 5px;
+  list-style-type: none;
+}
+ul.theList{
+  padding:0;
+
+}
+span{
+  color: red;
+  cursor: pointer;
 }
