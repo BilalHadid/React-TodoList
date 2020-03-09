@@ -1,50 +1,22 @@
-import React from 'react'
-import { render } from 'react-dom'
-import { Component} from 'react'
-import Mygf from './ComponentsTodo/First'
-import Heady from './ComponentsTodo/headerComponent'
-import Zoo from './ComponentsTodo/Adding'
+import React, { Component } from "react";
+import { render } from "react-dom";
+import Heady from "./ComponentsTodo/headerComponent";
+import Zoo from "./ComponentsTodo/Adding";
 
-const list=[]
-
-
-class App extends Component{
-    // constructor(props){
-    //     super(props)
-    //     this.state = {value: ''}
-
-    //     this.handleChange = this.handleChange.bind(this)
-    //     this.handleSubmit = this.handleSubmit.bind(this)
-    // }
-    // handleChange(event){
-    //     this.setState({value: event.target.value})
-    // }
-    // handleSubmit(event){
-    //     console.log('Name' , this.state.value)
-        
-    //     event.preventDefault();
-         
-    // }
-    
-    render (){
-        return(
-            <div>
-                 <Heady/>
-                <div>
-                <Zoo />
-                
-                
-                </div>
-                <div>
-                   
-                </div>
-               
-                
-            </div>
-        )
-    }
-    
+class App extends Component {
+  render() {
+    return (
+      <div>
+        {/* This should be Header not Heady */}
+        <Heady />
+        <div>
+          {/* What is this Zoo? Name your components correctly */}
+          <Zoo />
+        </div>
+        <div></div>
+      </div>
+    );
+  }
 }
 
-render(<App />,document.getElementById('root'))
-export default App
+render(<App />, document.getElementById("root"));

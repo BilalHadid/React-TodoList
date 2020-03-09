@@ -1,29 +1,18 @@
-import React,{Component} from 'react'
+import React, { Component } from "react";
 
-class TodoItem extends Component{
-    constructor(props){
-        super(props);
 
-        this.createTasks = this.createTasks.bind(this)
-
-    }
-    createTasks(item){
-        return <li onClick={() => this.delete(item.key)} key={item.key}>{item.text}          <span>X</span></li>
-    }
-    delete(key){
-        console.log(key)
-        this.props.delete(key)
-    }
-    render(){
-        let todoEntries = this.props.entries
-        let listItem = todoEntries.map(this.createTasks)
-
-        return(
-            <ul className="theList">
-                { listItem    }
-
-            </ul>
-        )
-    }
+// DONT ADD MULTIPLE RETURN STATEMENTS TO THE UI 
+class TodoItem extends Component {
+  render() {
+    return (
+      <ul className="theList">
+        {this.props.entries.map(item => (
+          <li onClick={() => this.props.delete(item.key)} key={item.key}>
+            {item.text} <span>X</span>
+          </li>
+        ))}
+      </ul>
+    );
+  }
 }
-export default TodoItem
+export default TodoItem;
