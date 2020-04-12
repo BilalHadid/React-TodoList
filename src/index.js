@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import React from 'react'
 import { render } from 'react-dom'
 import { Component} from 'react'
@@ -44,7 +45,27 @@ class App extends Component{
         )
     }
     
+=======
+import React, { Component } from "react";
+import { render } from "react-dom";
+import Heady from "./ComponentsTodo/headerComponent";
+import Zoo from "./ComponentsTodo/Adding";
+
+class App extends Component {
+  render() {
+    return (
+      <div>
+        {/* This should be Header not Heady */}
+        <Heady />
+        <div>
+          {/* What is this Zoo? Name your components correctly */}
+          <Zoo />
+        </div>
+        <div></div>
+      </div>
+    );
+  }
+>>>>>>> 90b2bfce3696f2b40123c4ac230740741be7917a
 }
 
-render(<App />,document.getElementById('root'))
-export default App
+render(<App />, document.getElementById("root"));
