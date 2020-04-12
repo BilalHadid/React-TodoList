@@ -1,6 +1,6 @@
 import React from 'react'
 import { Component } from 'react'
-import Index from '../index'
+// import Index from '../index'
 
 class App extends Component
 {

@@ -1,11 +1,11 @@
 import React from 'react'
 import { render } from 'react-dom'
 import { Component} from 'react'
-import Mygf from './ComponentsTodo/First'
+// import Mygf from './ComponentsTodo/First'
 import Heady from './ComponentsTodo/headerComponent'
 import Zoo from './ComponentsTodo/Adding'
 
-const list=[]
+
 
 
 class App extends Component{

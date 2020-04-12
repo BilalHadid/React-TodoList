@@ -54,6 +54,8 @@ class Todolist extends Component{
                 <input type="text" className="form-control" placeholder="Enter Something" ref={(a) => this._inputElement = a}/>
                 <button className="btn btn-danger" type="Submit">Submit</button>
               </form>
+              <div><h1>{this.props.name}</h1></div>
+              
             </div>
             <Item entries ={this.state.item} delete={this.deleteItem}/>
         </div>
