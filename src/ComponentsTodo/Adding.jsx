@@ -29,6 +29,20 @@ class Todolist extends Component {
     }
   }
 
+<<<<<<< HEAD
+    render() {
+      return(
+        <div className="todolistMain">
+            <div className="header">
+              <form onSubmit={this.addItem}>
+                <input type="text" className="form-control" placeholder="Enter Something" ref={(a) => this._inputElement = a}/>
+                <button className="btn btn-danger" type="Submit">Submit</button>
+              </form>
+              <div><h1>{this.props.name}</h1></div>
+              
+            </div>
+            <Item entries ={this.state.item} delete={this.deleteItem}/>
+=======
   deleteItem(key) {
     // Use arrow function as a array helper callback
     let filterItems = this.state.item.filter((item) => item.key !== key);
@@ -55,6 +69,7 @@ class Todolist extends Component {
               Submit
             </button>
           </form>
+>>>>>>> 90b2bfce3696f2b40123c4ac230740741be7917a
         </div>
         <Item entries={this.state.item} delete={this.deleteItem} />
       </div>
